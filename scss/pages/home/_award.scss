@@ -1,0 +1,28 @@
+.award {
+  @include sectionSpacing();
+  background-color: color(gray);
+  position: relative;
+
+  &-info {
+    @include maxWidth();
+    @include flexLayout();
+    margin-bottom: 30rem;
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+      margin: 5rem 0 3rem 0;
+      width: 70%;
+    }
+
+    .btn {
+      width: 25rem;
+    }
+  }
+
+  &-img {
+    position: absolute;
+    top: 40rem;
+    left: 38%;
+  }
+}
