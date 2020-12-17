@@ -1,0 +1,46 @@
+.quote {
+  @include sectionSpacing();
+  @include maxWidth();
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 25rem;
+
+  &-info {
+    img {
+      width: 15rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+    }
+
+    span {
+      @include headingStyles();
+      color: color(secondary);
+    }
+
+    small {
+      @include textStyles();
+      font-size: size(xs) - 0.2rem;
+    }
+
+    h4 {
+      @include headingStyles();
+      font-size: size(md);
+    }
+  }
+
+  &-stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+
+    .stat:nth-child(2) {
+      margin-left: 2rem;
+    }
+  }
+}

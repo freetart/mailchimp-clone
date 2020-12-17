@@ -8,6 +8,7 @@
   border: 0.1rem solid color(black);
   font-size: size(sm);
   transition: background-color 0.2s ease;
+  z-index: 10;
 
   &:hover {
     background-color: darken(color(secondary), 5%);
