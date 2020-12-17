@@ -1,0 +1,39 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: color(primary);
+  position: sticky;
+  top: 0;
+  padding: 2rem;
+  border: 0.3rem solid color(black);
+
+  &-links {
+    a {
+      @include textStyles();
+      font-size: size(sm);
+      color: color(black);
+      margin-left: 2rem;
+
+      &:hover {
+        border-bottom: 0.2rem solid color(black);
+      }
+    }
+  }
+
+  &-logo {
+    position: absolute;
+    width: 8rem;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: color(black);
+      font-size: size(lg);
+      margin-right: 2rem;
+    }
+  }
+}

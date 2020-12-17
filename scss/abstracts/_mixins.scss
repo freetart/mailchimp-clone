@@ -14,10 +14,16 @@
   font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: capitalize;
+  font-family: "Merriweather", cursive;
 }
 
 @mixin textStyles() {
   font-weight: 400;
   letter-spacing: 0.1rem;
   line-height: 1.6;
+}
+
+@mixin maxWidth() {
+  max-width: 1300px;
+  margin: 0 auto;
 }

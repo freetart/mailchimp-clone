@@ -1,0 +1,28 @@
+.btn {
+  @include textStyles();
+  background-color: color(secondary);
+  color: color(white);
+  padding: 1rem;
+  width: 15rem;
+  font-family: inherit;
+  border: 0.1rem solid color(black);
+  font-size: size(sm);
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken(color(secondary), 5%);
+  }
+}
+
+.btn-trans {
+  @extend .btn;
+  background-color: transparent;
+  color: color(black);
+  margin-right: 1rem;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: darken(color(secondary), 5%);
+    color: color(white);
+  }
+}
