@@ -1,0 +1,17 @@
+.section-heading {
+  text-align: center;
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl) + 2rem;
+    margin: 2rem 0;
+  }
+
+  p {
+    @include textStyles();
+    font-size: size(md);
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}

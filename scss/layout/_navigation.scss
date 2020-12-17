@@ -6,7 +6,7 @@
   position: sticky;
   top: 0;
   padding: 2rem;
-  border: 0.3rem solid color(black);
+  z-index: 1000;
 
   &-links {
     a {

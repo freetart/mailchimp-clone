@@ -1,0 +1,45 @@
+.about {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    align-items: center;
+
+    &-info {
+      h3 {
+        @include headingStyles();
+        font-size: size(xl);
+      }
+
+      p {
+        @include textStyles();
+        font-size: size(md);
+        margin: 1rem 0;
+      }
+
+      a {
+        @include textStyles();
+        font-size: size(sm);
+        color: color(black);
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: size(lg);
+          color: color(primary);
+          transition: margin 0.3s ease;
+          margin-left: 0.5rem;
+        }
+
+        &:hover {
+          i {
+            margin-left: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
