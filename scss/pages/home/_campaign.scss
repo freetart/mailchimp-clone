@@ -1,0 +1,56 @@
+.campaign {
+  @include sectionSpacing();
+  background-color: color(tan);
+  position: relative;
+
+  &-content {
+    @include maxWidth();
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    align-items: center;
+
+    &-info {
+      h3 {
+        font-size: size(lg);
+      }
+    }
+  }
+
+  &-info {
+    h3 {
+      @include headingStyles();
+      font-size: size(lg);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+      width: 75%;
+    }
+  }
+
+  &-bottom {
+    @include flexLayout();
+    margin: 10rem 0 15rem 0;
+
+    h2 {
+      @include headingStyles();
+      font-size: size(xl) + 2rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+      width: 50%;
+      margin: 2rem 0;
+    }
+  }
+
+  .overflow-image {
+    position: absolute;
+    bottom: -28rem;
+    left: 35%;
+  }
+}
