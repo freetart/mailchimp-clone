@@ -1,0 +1,44 @@
+.drawings {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  h2 {
+    width: 70%;
+    margin: auto;
+    margin: 5rem auto;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 15rem;
+      margin: 2rem 0;
+    }
+
+    h3 {
+      @include headingStyles();
+      font-size: size(lg);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(xs);
+      margin: 2rem 0;
+    }
+
+    a {
+      @include textStyles();
+      font-size: size(xs);
+      color: color(secondary);
+
+      &:hover {
+        border-bottom: 0.2rem solid color(secondary);
+      }
+    }
+  }
+}
