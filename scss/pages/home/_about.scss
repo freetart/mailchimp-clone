@@ -23,7 +23,7 @@
       a {
         @include textStyles();
         font-size: size(sm);
-        color: color(black);
+        color: color(secondary);
         display: flex;
         align-items: center;
 

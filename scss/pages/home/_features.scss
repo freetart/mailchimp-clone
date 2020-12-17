@@ -1,0 +1,40 @@
+.features {
+  @include maxWidth();
+  @include sectionSpacing();
+
+  h2 {
+    @include headingStyles();
+    font-size: size(xl) + 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .feature-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    align-items: center;
+    margin-bottom: 8rem;
+
+    h3 {
+      @include headingStyles();
+      font-size: size(lg);
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(sm);
+      width: 70%;
+      margin: 1rem 0;
+    }
+
+    a {
+      @include textStyles();
+      font-size: size(sm);
+      color: color(secondary);
+
+      &:hover {
+        border-bottom: 0.2rem solid color(secondary);
+      }
+    }
+  }
+}
