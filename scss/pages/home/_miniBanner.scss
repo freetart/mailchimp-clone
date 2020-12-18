@@ -1,0 +1,20 @@
+.banner {
+  background-color: color(primary);
+
+  &-content {
+    @include maxWidth();
+    @include sectionSpacing();
+    @include flexLayout();
+
+    h3 {
+      @include headingStyles();
+      font-size: size(xl) + 4rem;
+    }
+
+    p {
+      @include textStyles();
+      font-size: size(md);
+      margin: 2rem 0;
+    }
+  }
+}
