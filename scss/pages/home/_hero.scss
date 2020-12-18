@@ -8,14 +8,18 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
-
     padding: 2rem 2rem;
 
     @include response(lg) {
       grid-template-columns: 1fr;
+      text-align: center;
     }
 
     &-left {
+      @include response(lg) {
+        margin-bottom: 2rem;
+      }
+
       h1 {
         @include headingStyles();
         font-size: size(xl) + 2rem;

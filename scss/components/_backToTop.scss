@@ -1,0 +1,19 @@
+.goToTopBtn {
+  position: fixed;
+  bottom: 3rem;
+  right: 2rem;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  z-index: 999;
+
+  &:hover {
+    transform: translateY(-1rem);
+  }
+
+  i {
+    @include flexLayout();
+    font-size: size(xl) + 2rem;
+    color: color(primary);
+    z-index: 1000;
+  }
+}
