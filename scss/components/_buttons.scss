@@ -10,6 +10,10 @@
   transition: background-color 0.2s ease;
   z-index: 10;
 
+  @include response(md) {
+    width: 90%;
+  }
+
   &:hover {
     background-color: darken(color(secondary), 5%);
   }
@@ -19,7 +23,7 @@
   @extend .btn;
   background-color: transparent;
   color: color(black);
-  margin-right: 1rem;
+  margin: 0 1rem;
   transition: background-color 0.2s ease;
 
   &:hover {

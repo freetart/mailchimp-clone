@@ -6,6 +6,10 @@
     width: 70%;
     margin: auto;
     margin: 5rem auto;
+
+    @include response(lg) {
+      width: 100%;
+    }
   }
 
   &-content {
@@ -14,6 +18,10 @@
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
+
+    @include response(lg) {
+      grid-template-columns: 1fr;
+    }
 
     img {
       width: 15rem;

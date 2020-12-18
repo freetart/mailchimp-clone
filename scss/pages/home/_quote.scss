@@ -8,6 +8,10 @@
   text-align: center;
   margin-top: 25rem;
 
+  @include response(xl) {
+    grid-template-columns: 1fr;
+  }
+
   &-info {
     img {
       width: 15rem;

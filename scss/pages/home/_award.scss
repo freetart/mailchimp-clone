@@ -13,6 +13,14 @@
       font-size: size(xl) + 2rem;
       margin: 5rem 0 3rem 0;
       width: 70%;
+
+      @include response(lg) {
+        width: 100%;
+      }
+
+      @include response(sm) {
+        font-size: size(xl);
+      }
     }
 
     .btn {
@@ -24,5 +32,22 @@
     position: absolute;
     top: 40rem;
     left: 38%;
+
+    @include response(xxl) {
+      top: 50rem;
+      left: 25%;
+    }
+
+    @include response(lg) {
+      top: 70rem;
+      left: 25%;
+      width: 30rem;
+    }
+
+    @include response(sm) {
+      top: 50rem;
+      left: 10%;
+      width: 80%;
+    }
   }
 }

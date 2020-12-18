@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: color(primary);
   position: sticky;
   top: 0;
@@ -24,21 +24,44 @@
     a:nth-child(1) {
       margin-left: 0;
     }
+
+    @include response(xl) {
+      display: none;
+    }
   }
 
   &-logo {
-    position: absolute;
     width: 8rem;
+
+    @include response(md) {
+      width: 5rem;
+    }
   }
 
   &-right {
     display: flex;
     align-items: center;
+    @include response(md) {
+      width: 90%;
+    }
+
+    i {
+      @include response(xl) {
+        display: none;
+      }
+    }
 
     a {
       color: color(black);
       font-size: size(lg);
       margin-right: 2rem;
+    }
+
+    .btn,
+    .btn-trans {
+      @include response(xl) {
+        display: none;
+      }
     }
   }
 }

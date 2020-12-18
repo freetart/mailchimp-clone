@@ -9,6 +9,10 @@
     h3 {
       @include headingStyles();
       font-size: size(xl) + 4rem;
+
+      @include response(sm) {
+        font-size: size(xl);
+      }
     }
 
     p {

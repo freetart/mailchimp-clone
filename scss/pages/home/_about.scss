@@ -8,7 +8,15 @@
     grid-gap: 4rem;
     align-items: center;
 
+    @include response(lg) {
+      grid-template-columns: 1fr;
+    }
+
     &-info {
+      @include response(lg) {
+        order: 1;
+      }
+
       h3 {
         @include headingStyles();
         font-size: size(xl);

@@ -8,10 +8,24 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
 
+    @include response(xl) {
+      grid-template-columns: 1fr;
+    }
+
     &-links {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 4rem;
+      margin-bottom: 2rem;
+
+      @include response(xxl) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include response(md) {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+      }
 
       h4 {
         @include headingStyles();
@@ -35,6 +49,12 @@
     }
 
     &-right {
+      @include response(xl) {
+        img {
+          width: 20rem;
+        }
+      }
+
       .right-col:nth-child(1) {
         margin-bottom: 5rem;
       }
@@ -42,6 +62,10 @@
       p {
         @include textStyles();
         font-size: size(xs);
+
+        @include response(xl) {
+          width: 70%;
+        }
       }
 
       a {
@@ -72,6 +96,14 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     grid-gap: 2rem;
+
+    @include response(xl) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include response(md) {
+      grid-template-columns: 1fr;
+    }
 
     .app-stores {
       img {
