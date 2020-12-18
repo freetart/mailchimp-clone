@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -14,7 +15,7 @@
     <title>Mailchimp Clone</title>
   </head>
   <body>
-    <!-- TODO make responsive |  aos.js | add hamburger menu | back to top button | login | signup -->
+    <!-- TODO aos.js | add hamburger menu | back to top button | login | signup -->
     <div class="wrapper">
       <!-- NAV -->
       <nav class="navigation">
@@ -39,7 +40,7 @@
       <!-- HERO -->
       <header class="hero">
         <div class="hero-content">
-          <div class="hero-content-left">
+          <div class="hero-content-left" data-aos="fade-right">
             <h1>Marketing smarts for big ideas</h1>
             <p>
               Mailchimp helps small businesses do big things, with the right
@@ -47,7 +48,7 @@
             </p>
             <button class="btn">Pick A Plan</button>
           </div>
-          <div class="hero-content-right">
+          <div class="hero-content-right" data-aos="fade-left">
             <img src="images/home/drawing6.png" alt="illustration" />
           </div>
         </div>
@@ -76,12 +77,12 @@
                 <i class="fas fa-arrow-right"></i>
               </a>
             </div>
-            <div class="about-content-img">
+            <div class="about-content-img" data-aos="fade-up">
               <img src="images/home/sectionimg1.png" alt="about image 1" />
             </div>
           </div>
           <div class="about-content">
-            <div class="about-content-img">
+            <div class="about-content-img" data-aos="fade-up">
               <img src="images/home/sectionimg2.png" alt="about image 2" />
             </div>
             <div class="about-content-info">
@@ -102,7 +103,7 @@
         <section class="features">
           <h2>We'll help you</h2>
           <div class="feature-content">
-            <div class="feature-img">
+            <div class="feature-img" data-aos="fade-up">
               <img src="images/home/sectionimg3.jpg" alt="feature 1" />
             </div>
             <div class="feature-info">
@@ -116,7 +117,7 @@
             </div>
           </div>
           <div class="feature-content">
-            <div class="feature-img">
+            <div class="feature-img" data-aos="fade-up">
               <img src="images/home/sectionimg4.jpg" alt="feature 2" />
             </div>
             <div class="feature-info">
@@ -130,7 +131,7 @@
             </div>
           </div>
           <div class="feature-content">
-            <div class="feature-img">
+            <div class="feature-img" data-aos="fade-up">
               <img src="images/home/sectionimg5.jpg" alt="feature 3" />
             </div>
             <div class="feature-info">
@@ -144,7 +145,7 @@
             </div>
           </div>
           <div class="feature-content">
-            <div class="feature-img">
+            <div class="feature-img" data-aos="fade-up">
               <img src="images/home/sectionimg6.jpg" alt="feature 4" />
             </div>
             <div class="feature-info">
@@ -225,7 +226,7 @@
             <h2>See how it all comes together</h2>
           </div>
           <div class="campaign-content">
-            <div class="campaign-img">
+            <div class="campaign-img" data-aos="fade-right">
               <img src="images/home/campaign1.png" alt="campaign img 1" />
             </div>
             <div class="campaign-info">
@@ -245,12 +246,12 @@
                 checkout.
               </p>
             </div>
-            <div class="campaign-img">
+            <div class="campaign-img" data-aos="fade-left">
               <img src="images/home/campaign2.png" alt="campaign img 2" />
             </div>
           </div>
           <div class="campaign-content">
-            <div class="campaign-img">
+            <div class="campaign-img" data-aos="fade-right">
               <img src="images/home/campaign3.png" alt="campaign img 3" />
             </div>
             <div class="campaign-info">
@@ -277,7 +278,7 @@
         <!-- END OF CAMPAIGN -->
         <!-- QUOTE -->
         <section class="quote">
-          <div class="quote-info">
+          <div class="quote-info" data-aos="fade-right">
             <img
               src="images/home/quotelogo.png"
               alt="customer company's logo"
@@ -301,7 +302,7 @@
             </div>
             <small>Results not typical</small>
           </div>
-          <div class="quote-img">
+          <div class="quote-img" data-aos="fade-left">
             <img src="images/home/quoteimg.jpg" alt="happy customers" />
           </div>
         </section>
@@ -331,7 +332,7 @@
             </p>
           </div>
           <div class="articles-grid-container-1">
-            <article class="article-1">
+            <article class="article-1" data-aos="fade-down">
               <small>DIRECTORY</small>
               <h4>Buy Local With Our Business Directory</h4>
               <p>
@@ -341,7 +342,7 @@
               </p>
               <button class="btn">Shop Small</button>
             </article>
-            <article class="article-2">
+            <article class="article-2" data-aos="fade-up">
               <img src="images/home/gridimg1.jpg" alt="grid image 1" />
               <small>SERIES</small>
               <h4>Second Act is Back</h4>
@@ -354,12 +355,12 @@
             </article>
           </div>
           <div class="articles-grid-container-2">
-            <article class="article-3">
+            <article class="article-3" data-aos="fade-down">
               <small>BRIEFING</small>
               <h4>How to be smarter with your time</h4>
               <button class="btn-trans">Learn More</button>
             </article>
-            <article class="article-4">
+            <article class="article-4" data-aos="fade-up">
               <img src="images/home/gridimg2.jpg" alt="grid img 2" />
               <small>RESOURCES</small>
               <h4>
@@ -506,5 +507,9 @@
       <!-- END OF FOOTER -->
     </div>
     <script src="js/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 400, duration: 1000 });
+    </script>
   </body>
 </html>

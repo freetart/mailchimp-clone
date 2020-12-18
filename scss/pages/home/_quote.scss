@@ -7,6 +7,7 @@
   align-items: center;
   text-align: center;
   margin-top: 25rem;
+  overflow: hidden;
 
   @include response(xl) {
     grid-template-columns: 1fr;

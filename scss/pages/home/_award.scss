@@ -7,6 +7,7 @@
     @include maxWidth();
     @include flexLayout();
     margin-bottom: 30rem;
+    overflow: hidden;
 
     h2 {
       @include headingStyles();

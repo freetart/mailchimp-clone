@@ -1,5 +1,6 @@
 .hero {
   background-color: color(primary);
+  overflow: hidden;
 
   &-content {
     @include maxWidth();

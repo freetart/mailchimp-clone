@@ -1,6 +1,7 @@
 .about {
   @include maxWidth();
   @include sectionSpacing();
+  overflow: hidden;
 
   &-content {
     display: grid;

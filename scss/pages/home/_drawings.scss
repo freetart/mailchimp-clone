@@ -1,6 +1,7 @@
 .drawings {
   @include maxWidth();
   @include sectionSpacing();
+  overflow: hidden;
 
   h2 {
     width: 70%;

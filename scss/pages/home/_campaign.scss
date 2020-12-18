@@ -2,6 +2,7 @@
   @include sectionSpacing();
   background-color: color(tan);
   position: relative;
+  overflow: hidden;
 
   .section-heading {
     @include response(lg) {

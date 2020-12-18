@@ -1,6 +1,7 @@
 .companies {
   @include sectionSpacing();
   background-color: color(gray);
+  overflow: hidden;
 
   .company-logos {
     @include maxWidth();

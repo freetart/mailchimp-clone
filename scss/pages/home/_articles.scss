@@ -2,6 +2,7 @@
   @include sectionSpacing();
   @include maxWidth();
   margin-top: 20rem;
+  overflow: hidden;
 
   &-grid-container-1 {
     display: grid;
