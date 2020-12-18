@@ -2,7 +2,6 @@
   @include sectionSpacing();
   background-color: color(tan);
   position: relative;
-  overflow: hidden;
 
   .section-heading {
     @include response(lg) {
@@ -16,6 +15,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
     align-items: center;
+    overflow: hidden;
 
     @include response(lg) {
       grid-template-columns: 1fr;
@@ -79,6 +79,7 @@
     position: absolute;
     bottom: -28rem;
     left: 35%;
+    z-index: 1000;
 
     @include response(xxl) {
       left: 25%;
