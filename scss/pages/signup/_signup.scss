@@ -1,4 +1,4 @@
-.login-container {
+.signup-container {
   display: grid;
   grid-template-columns: 2fr 4fr;
   align-items: center;
@@ -13,7 +13,7 @@
     grid-template-columns: 1fr;
   }
 
-  .login-form {
+  .signup-form {
     @include sectionSpacing();
     height: 100vh;
     display: flex;
@@ -68,19 +68,36 @@
       margin: 1rem 0;
     }
 
-    .login-links {
+    .signup-links {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
     }
 
-    .login-link {
+    .signup-link {
       margin-left: 0.5rem;
+    }
+
+    .list-items-container {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .list-items {
+        margin: 0 2rem;
+
+        li {
+          @include textStyles();
+          font-size: size(xs);
+          list-style-type: square;
+        }
+      }
     }
   }
 
-  .login-info {
-    background-color: color(gray);
+  .signup-info {
+    background-color: color(primary);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -91,35 +108,9 @@
       display: none;
     }
 
-    h2 {
-      @include headingStyles();
-      font-size: size(xl) + 2rem;
-    }
-
-    h4 {
-      @include headingStyles();
-      font-size: size(xl);
-    }
-
-    p {
-      @include textStyles();
-      font-size: size(md);
-      width: 70%;
-      text-align: center;
-      margin: 2rem 0;
-
-      @include response(xxl) {
-        width: 90%;
-      }
-    }
-
-    img {
-      width: 30rem;
-    }
-
-    .login-img-container {
+    .signup-img-container {
       img {
-        width: 60rem;
+        width: 100%;
 
         @include response(xxl) {
           width: 40rem;
