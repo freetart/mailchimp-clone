@@ -9,6 +9,7 @@
   font-size: size(sm);
   transition: background-color 0.2s ease;
   z-index: 10;
+  text-align: center;
 
   @include response(md) {
     width: 90%;

@@ -90,7 +90,7 @@
 
   &-bottom {
     @include maxWidth();
-    @include sectionSpacing();
+    padding: 2rem 2rem;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);

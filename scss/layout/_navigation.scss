@@ -46,15 +46,12 @@
     }
 
     i {
-      @include response(xl) {
-        display: none;
-      }
-    }
-
-    a {
       color: color(black);
       font-size: size(lg);
       margin-right: 2rem;
+      @include response(xl) {
+        display: none;
+      }
     }
 
     .btn,
