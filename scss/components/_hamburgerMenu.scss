@@ -74,6 +74,10 @@
   padding: 0.3rem 0;
 }
 
+.active {
+  color: color(secondary);
+}
+
 .nav-link::after {
   content: "";
   width: 100%;

@@ -5,7 +5,16 @@
   grid-gap: 2rem;
   height: 100vh;
 
+  @include response(xxl) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include response(xl) {
+    grid-template-columns: 1fr;
+  }
+
   .login-form {
+    @include sectionSpacing();
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -46,6 +55,7 @@
       @include textStyles();
       display: block;
       font-size: size(md);
+      margin-top: 2rem;
     }
 
     .form-input {
@@ -55,7 +65,7 @@
       outline: 0;
       border: 0;
       border-bottom: 0.2rem solid color(secondary);
-      margin-bottom: 2rem;
+      margin: 1rem 0;
     }
 
     .login-links {
@@ -73,6 +83,10 @@
     justify-content: center;
     align-items: center;
 
+    @include response(xl) {
+      display: none;
+    }
+
     h2 {
       @include headingStyles();
       font-size: size(xl) + 2rem;
@@ -89,6 +103,10 @@
       width: 70%;
       text-align: center;
       margin: 2rem 0;
+
+      @include response(xxl) {
+        width: 90%;
+      }
     }
 
     img {
@@ -98,6 +116,10 @@
     .login-img-container {
       img {
         width: 60rem;
+
+        @include response(xxl) {
+          width: 40rem;
+        }
       }
     }
   }
